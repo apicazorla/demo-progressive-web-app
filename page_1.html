@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <title>Preferred names organic nomenclature</title>
+</head>
+
+<div id="navegacion">
+    <div class="menu"><a href="index.html">Home</a></div>
+    <div class="menu"><a href="answers_1.html">Answers</a></div>
+ </div>
+
+<body>
+    <h1>ALKANES</h1>
+    <div class="container">
+        <div id="start"><button class="start-btn" onClick= "beginQuiz()">Begin the Quiz!</button>
+        <p>Test your knowledge about the preferred names of organic compounds!<br>
+        Each formula of a compound will be accompanied by four options. <br> Click on one to select it as your answer.</p></div>
+        <div id="quiz" style="display: none">
+            <h2 id="quizQuestion"></h2>
+            <div class = "img-div" id="quizImg"></div>
+            <div id="choices">
+                <button id="choiceA" onclick="check('A')"></button>
+                <button id="choiceB" onclick="check('B')"></button>
+                <button id="choiceC" onclick="check('C')"></button>
+                <button id="choiceD" onclick="check('D')"></button>
+            </div>
+            <div id="choiceResponse" style="display: none"></div>
+        </div>
+        <div id="scoreBlock" style="display: none"></div>
+        <div id="scoreMessage" style="display: none"></div>
+        <div><button id="quizAgain" class="quizRestart" style="display: none" onClick="restartQuiz()">Try Again!</button></div>
+        
+    </div>
+    <div><form action="https://google.com">
+        <input type="submit" value="Go to Google" />
+    </form></div>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="js/quizgame_1.js"></script>
+</body>
+
+</html>
